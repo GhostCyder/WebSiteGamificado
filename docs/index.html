@@ -3,21 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de Digitação Rápida</title>
+  <title>Teste de Escrita</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Teste de Digitação Rápida</h1>
-    <div id="quote-container">
-      <p id="quote">Comece a digitar para iniciar o teste...</p>
+  <header>
+    <div class="container">
+      <h1>Teste de Escrita</h1>
     </div>
-    <textarea id="textarea" placeholder="Comece a digitar aqui..." autofocus></textarea>
-    <button id="startButton">Iniciar Teste</button>
-    <button id="retryButton" style="display: none;">Repetir</button>
-    <button id="newPromptButton" style="display: none;">Novo Prompt</button>
-    <div id="result"></div>
-  </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="quote-container">
+        <p id="quote">Clique em iniciar teste...</p>
+      </div>
+      <textarea id="textarea" placeholder="Comece a escrever aqui..." autofocus></textarea>
+      <button id="startButton">Iniciar Teste</button>
+      <button id="retryButton" style="display: none;">Repetir</button>
+      <button id="newPromptButton" style="display: none;">Novo Prompt</button>
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Teste de Escrita - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

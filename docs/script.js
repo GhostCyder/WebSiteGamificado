@@ -47,7 +47,7 @@ function endTest() {
   const timeTaken = elapsedTime.toFixed(2);
   const speed = (wordCount / elapsedTime).toFixed(2);
 
-  resultElement.innerHTML = `Time taken: ${timeTaken} seconds<br>Words typed: ${wordCount}<br>Typing speed: ${speed} words per second`;
+  resultElement.innerHTML = `Tempo: ${timeTaken} seconds<br>Palavras escritas: ${wordCount}<br>Velocidade de escrita: ${speed} palavras por segundo`;
 
   retryButton.style.display = 'inline-block';
   newPromptButton.style.display = 'inline-block';
