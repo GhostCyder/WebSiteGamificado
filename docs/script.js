@@ -35,8 +35,26 @@ const quotes = [
   "Cavalo dado não se olha os dentes.",
   "Quem com ferro fere, com ferro será ferido.",
   "Deus ajuda a quem cedo madruga.",
-  "Em terra de cego, quem tem um olho é rei."
+  "Em terra de cego, quem tem um olho é rei.",
+  "Quem espera desespera.",
+  "Mais vale um pássaro na mão do que dois a voar.",
+  "Quem vê caras não vê corações.",
+  "Amigos, amigos, negócios à parte.",
+  "Não há rosas sem espinhos.",
+  "Mais vale tarde do que nunca.",
+  "A união faz a força.",
+  "O barato sai caro.",
+  "Quem ri por último, ri melhor.",
+  "Não há mal que sempre dure, nem bem que nunca acabe.",
+  "Longe da vista, longe do coração.",
+  "Nem tudo o que reluz é ouro.",
+  "Antes só do que mal acompanhado.",
+  "Cão que ladra não morde.",
+  "Quem semeia ventos, colhe tempestades.",
+  "Casa de ferreiro, espeto de pau.",
+  "Mente sã, corpo são."
 ];
+
 
 let usedQuotes = [];
 
