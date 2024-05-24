@@ -109,5 +109,40 @@ button:hover {
   animation: confetti-fall 5s ease-out infinite; /* Adjust duration and timing function */
 }
 
-  
- 
+.title-container {
+  text-align: center; /* Center the text */
+  padding: 50px; /* Add padding to the top and bottom */
+  background-color: rgba(68,68,68, 0.85); /* Semi-transparent white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Add a subtle shadow */
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.title-container h1 {
+  font-size: 36px; /* Adjust the font size */
+  margin: 0; /* Remove any default margin */
+  color: #ffffff; /* Set the text color */
+}
+
+/* Add the font family and adjust the font size */
+#quote-container p,
+textarea {
+    font-family: 'Merienda', cursive;
+    font-size: 22px; /* Adjust the font size as needed */
+    /* Additional styling properties */
+}
+
+/* Add the font family for all other text elements */
+body, button, input {
+  font-family: 'Goudy Bookletter 1911', serif;
+  /* Additional styling properties */
+}
+
+/* Adjust the font size for better readability */
+h1 {
+  font-size: 36px; /* Adjust the font size for headings */
+}
+
+p, button, input {
+  font-size: 16px; /* Adjust the font size for paragraphs, buttons, and input fields */
+}

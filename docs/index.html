@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de Escrita</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://i.etsystatic.com/26145311/r/il/fd7410/2867118562/il_fullxfull.2867118562_ause.jpg'); /* Replace with the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Goudy Bookletter 1911', serif; /* Change font family to Goudy Bookletter 1911 */
+            color: #333;
+            opacity: 1; /* Initial opacity */
+            transition: opacity 0.5s ease; /* Add transition for smooth fade effect */
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(68,68,68, 0.85);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .play-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: rgb(65,65,65);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Goudy Bookletter 1911', serif; /* Apply font family to the button */
+        }
+        .play-button:hover {
+            background-color: #45a049;
+        }
+        /* Hide the content during page transition */
+        body.fade-out {
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
     <div class="container">
-      <h1>Teste de Escrita</h1>
+        <h1>Bem-vindo ao Teste de Escrita</h1>
+        <button class="play-button" onclick="fadeOutAndLoadSecondPage()">Iniciar</button>
     </div>
-  </header>
 
-  <main>
-    <div class="container">
-      <div id="quote-container">
-        <p id="quote">Clique em iniciar teste...</p>
-      </div>
-      <textarea id="textarea" placeholder="Comece a escrever aqui..." autofocus spellcheck="false"></textarea>
-      <button id="startButton">Iniciar Teste</button>
-      <button id="retryButton" style="display: none;">Repetir</button>
-      <button id="newPromptButton" style="display: none;">Novo Prompt</button>
-      <div id="result"></div>
-      <div id="confetti"></div>
-    </div>
-  </main>
-
-  <footer>
-    <div id="scrolling-quote"></div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script>
+        function fadeOutAndLoadSecondPage() {
+            document.body.classList.add('fade-out'); // Apply fade-out class to body
+            setTimeout(function() {
+                window.location.href = 'second_page.html'; // Load second page after fade out
+            }, 500); // Adjust timing to match transition duration
+        }
+    </script>
 </body>
 </html>
+
+
+
+
 
